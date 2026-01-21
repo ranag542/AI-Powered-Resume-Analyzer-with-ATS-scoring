@@ -12,9 +12,9 @@ from nltk.tokenize import word_tokenize
 
 # Download required NLTK data (will be silent if already downloaded)
 try:
-    nltk.data.find('tokenizers/punkt')
+    nltk.data.find('tokenizers/punkt_tab')
 except LookupError:
-    nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
 
 try:
     nltk.data.find('corpora/stopwords')

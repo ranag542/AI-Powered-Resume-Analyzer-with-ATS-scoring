@@ -15,7 +15,7 @@ class ResumeParser:
     
     def __init__(self):
         self.email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-        self.phone_pattern = r'(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
+        self.phone_pattern = r'(?:\+?\d{1,3}[-.\s]?)?(?:\(?\d{3}\)?[-.\s]?)\d{3}[-.\s]?\d{4}'
         
     def extract_text_from_pdf(self, pdf_path: str) -> str:
         """Extract text from PDF file."""
@@ -49,13 +49,16 @@ class ResumeParser:
             raise Exception(f"Error extracting text from DOCX: {str(e)}")
     
     def extract_text(self, file_path: str) -> str:
-        """Extract text from resume file (PDF or DOCX)."""
+        """Extract text from resume file (PDF, DOCX, or TXT)."""
         if file_path.lower().endswith('.pdf'):
             return self.extract_text_from_pdf(file_path)
         elif file_path.lower().endswith('.docx'):
             return self.extract_text_from_docx(file_path)
+        elif file_path.lower().endswith('.txt'):
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return f.read().strip()
         else:
-            raise ValueError("Unsupported file format. Only PDF and DOCX are supported.")
+            raise ValueError("Unsupported file format. Only PDF, DOCX, and TXT are supported.")
     
     def extract_contact_info(self, text: str) -> Dict[str, Optional[str]]:
         """Extract contact information from resume text."""
@@ -72,9 +75,9 @@ class ResumeParser:
         # Extract phone
         phone_matches = re.findall(self.phone_pattern, text)
         if phone_matches:
-            # Join tuple if present and clean up
-            phone = ''.join(phone_matches[0]) if isinstance(phone_matches[0], tuple) else phone_matches[0]
-            contact_info['phone'] = phone.strip()
+            # Get first match and clean up
+            phone = phone_matches[0].strip()
+            contact_info['phone'] = phone
         
         return contact_info
     

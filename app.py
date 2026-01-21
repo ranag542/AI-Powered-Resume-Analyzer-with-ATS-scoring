@@ -50,9 +50,9 @@ def main():
     # File upload
     st.header("📤 Upload Resume")
     uploaded_file = st.file_uploader(
-        "Upload your resume (PDF or DOCX)",
-        type=['pdf', 'docx'],
-        help="Supported formats: PDF, DOCX"
+        "Upload your resume (PDF, DOCX, or TXT)",
+        type=['pdf', 'docx', 'txt'],
+        help="Supported formats: PDF, DOCX, TXT"
     )
     
     if uploaded_file is not None:
