@@ -1,0 +1,74 @@
+John Doe
+Email: john.doe@example.com
+Phone: (555) 123-4567
+LinkedIn: linkedin.com/in/johndoe
+GitHub: github.com/johndoe
+
+PROFESSIONAL SUMMARY
+Experienced Software Engineer with 5+ years of expertise in full-stack development, cloud computing, and machine learning. Proven track record of delivering scalable applications and leading cross-functional teams.
+
+TECHNICAL SKILLS
+Programming Languages: Python, Java, JavaScript, TypeScript, SQL
+Frameworks & Libraries: React, Node.js, Django, Flask, Spring Boot
+Cloud & DevOps: AWS, Docker, Kubernetes, CI/CD, Jenkins
+Databases: PostgreSQL, MongoDB, Redis
+Machine Learning: TensorFlow, PyTorch, scikit-learn, NLP
+Tools: Git, Agile/Scrum, JIRA
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | Tech Solutions Inc. | 2021 - Present
+• Architected and deployed microservices-based applications serving 1M+ users
+• Reduced application latency by 40% through optimization and caching strategies
+• Led team of 5 engineers in developing cloud-native solutions using AWS and Kubernetes
+• Implemented CI/CD pipelines reducing deployment time from hours to minutes
+• Mentored junior developers and conducted code reviews
+
+Software Engineer | Digital Innovations LLC | 2019 - 2021
+• Developed RESTful APIs using Python Django and Node.js serving 100K+ daily requests
+• Built responsive web applications using React and TypeScript
+• Integrated machine learning models for predictive analytics improving accuracy by 25%
+• Collaborated with product managers and designers in Agile environment
+• Achieved 95% code coverage through comprehensive unit and integration testing
+
+Junior Developer | StartupXYZ | 2018 - 2019
+• Created data visualization dashboards using React and D3.js
+• Developed automated testing scripts reducing manual testing effort by 60%
+• Participated in sprint planning and daily standups
+• Fixed bugs and implemented new features based on user feedback
+
+EDUCATION
+
+Master of Science in Computer Science
+Stanford University | 2016 - 2018
+Focus: Artificial Intelligence and Machine Learning
+GPA: 3.9/4.0
+
+Bachelor of Science in Computer Engineering  
+University of California, Berkeley | 2012 - 2016
+Magna Cum Laude
+GPA: 3.8/4.0
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate
+• Certified Kubernetes Application Developer (CKAD)
+• MongoDB Certified Developer
+
+PROJECTS
+
+AI-Powered Resume Analyzer
+• Built end-to-end ML application for resume screening and ATS scoring
+• Technologies: Python, NLP, TensorFlow, Streamlit
+• Achieved 85% accuracy in skill extraction and matching
+
+E-Commerce Platform
+• Developed scalable microservices architecture handling 50K+ transactions daily
+• Technologies: Node.js, React, MongoDB, AWS, Docker
+• Implemented payment processing integration with Stripe
+
+PUBLICATIONS
+• "Machine Learning Approaches for Resume Screening" - AI Conference 2022
+• "Optimizing Cloud Infrastructure Costs" - Tech Blog 2021
+
+LANGUAGES
+English (Native), Spanish (Professional Working Proficiency)
