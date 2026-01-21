@@ -1,5 +1,8 @@
 # AI-Powered Resume Analyzer & ATS Scorer
 
+![Demo Screenshot](image.png)
+![Analysis Results](img.png)
+
 A modern web application that analyzes resumes and provides ATS (Applicant Tracking System) compatibility scores with actionable recommendations.
 
 ## Features
