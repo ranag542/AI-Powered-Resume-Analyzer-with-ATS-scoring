@@ -161,15 +161,15 @@ def main():
                     
                     col1, col2, col3 = st.columns([2, 1, 1])
                     with col1:
-                        # Color based on score
+                        # Color based on score - validate color for security
                         if overall_score >= 80:
-                            color = "green"
+                            color = "#28a745"  # green
                             rating = "Excellent"
                         elif overall_score >= 60:
-                            color = "orange"
+                            color = "#ff8c00"  # orange
                             rating = "Good"
                         else:
-                            color = "red"
+                            color = "#dc3545"  # red
                             rating = "Needs Improvement"
                         
                         st.markdown(f"""

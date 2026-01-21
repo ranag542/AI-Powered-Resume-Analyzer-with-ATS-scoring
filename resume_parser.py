@@ -50,15 +50,17 @@ class ResumeParser:
     
     def extract_text(self, file_path: str) -> str:
         """Extract text from resume file (PDF, DOCX, or TXT)."""
-        if file_path.lower().endswith('.pdf'):
+        file_ext = file_path.lower().split('.')[-1] if '.' in file_path else ''
+        
+        if file_ext == 'pdf':
             return self.extract_text_from_pdf(file_path)
-        elif file_path.lower().endswith('.docx'):
+        elif file_ext == 'docx':
             return self.extract_text_from_docx(file_path)
-        elif file_path.lower().endswith('.txt'):
+        elif file_ext == 'txt':
             with open(file_path, 'r', encoding='utf-8') as f:
                 return f.read().strip()
         else:
-            raise ValueError("Unsupported file format. Only PDF, DOCX, and TXT are supported.")
+            raise ValueError(f"Unsupported file format: '.{file_ext}'. Only PDF, DOCX, and TXT are supported.")
     
     def extract_contact_info(self, text: str) -> Dict[str, Optional[str]]:
         """Extract contact information from resume text."""

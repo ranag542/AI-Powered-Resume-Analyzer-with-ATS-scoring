@@ -79,7 +79,7 @@ class TestResumeParser(unittest.TestCase):
     def test_unsupported_file_format(self):
         """Test that unsupported formats raise ValueError."""
         with self.assertRaises(ValueError):
-            self.parser.extract_text("test.txt")
+            self.parser.extract_text("test.xyz")
 
 
 class TestResumeParserIntegration(unittest.TestCase):
